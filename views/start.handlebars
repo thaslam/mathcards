@@ -1,0 +1,33 @@
+<div class="section_user_selection">
+  <h2 align="center">1. select user</h2>
+  {{#each model as |page|}}
+    {{#if @index}}
+      <div id="page_{{@index}}" class="page hide">
+      <div id="user_page_{{@index}}" class="user_page hide">
+    {{else}}
+      <div id="page_{{@index}}" class="page">
+      <div id="user_page_{{@index}}" class="user_page fromRight animated">
+    {{/if}}
+    <div id="left_{{@index}}" class="arrow-left"></div>
+    {{#each users as |user|}}
+      <div id="user_{{id}}" data-id="{{id}}" class="user user_unselected">
+        <img src="{{user.pic}}" />
+        <div class="user_name">{{user.name}}</div>
+      </div>
+    {{/each}}
+    <div id="right_{{@index}}" class="arrow-right"></div>
+    </div></div>
+  {{/each}}
+</div>
+<div class="section_math_type">
+  <h2 align="center">2. select operation</h2>
+  <div class="math_type_options">
+    <div class="type option_unselected" data-type="addition">Addition</div>
+    <div class="type option_unselected" data-type="subtraction">Subtraction</div>
+    <div class="type option_unselected" data-type="multiplication">Multiplication</div>
+    <div class="type option_unselected" data-type="division">Division</div>
+  </div>
+</div>
+<div class="section_math_go">
+  <a id="link_go" href="#" class="hide">Go!</a>
+</div>

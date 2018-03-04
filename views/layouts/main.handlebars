@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>MathCards</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    {{#each styles}}
+        <link rel="stylesheet" href="{{style}}">
+    {{/each}}
+</head>
+<body>
+    <div class="header">
+        <h1><a href="/">MathCards</a></h1>
+        <a class="right_link" href="/about">About</a>
+    </div>
+    <div class="main">
+        {{{body}}}
+    </div>
+    <div class="footer">
+        <div>Website by Tom Haslam for CS290</div>
+    </div>
+    {{#each scripts}}
+        <script src="{{script}}"></script>
+    {{/each}}
+</body>
+</html>

@@ -1,0 +1,152 @@
+.section_profile {
+  display: flex;
+  align-items: center;
+}
+.section_profile img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.user_name {
+  font-size: 28px;
+}
+.section_math {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.timer {
+  display: block;
+  margin-left: 20px;
+  font-size: 28px;
+}
+.result {
+  position: absolute;
+  height: 40px;
+  border-radius: 0px;
+  background-color: #AED6F1;
+  width: 250px;
+  top: 190px;
+}
+.result img {
+  height: 36px;
+  width: 36px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.again {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 28px;
+}
+.again a {
+  color: #2E86C1;
+}
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 250px;
+  background-color: #ffffff;
+  color: #444444;
+  border-radius: 30px;
+  min-height: 330px;
+  border: solid 10px #AED6F1;
+  position: relative;
+}
+.card .operand {
+  font-size: 64px;
+  margin: 10px;
+  margin-right: 40px;
+}
+.card .operator {
+  font-size: 64px;
+  position: absolute;
+  left: 60px;
+  top: 120px;
+}
+.card .operator {
+  font-size: 64px;
+  margin: 10px;
+  margin-right: 40px;
+}
+.card .operand_1 {
+  position: absolute;
+  right: 0px;
+}
+.card .operand_2 {
+  position: absolute;
+  right: 0px;
+  top: 120px;
+}
+.card .line {
+  position: absolute;
+  left: 12px;
+  height: 12px;
+  width: 220px;
+  background-color: #444444;
+  top: 250px;
+  border-radius: 5px;
+}
+.card .answer {
+  position: absolute;;
+  top: 265px;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0px;
+}
+.card .answer input {
+  font-family: 'Permanent Marker', sans-serif;
+  width: 190px;
+  font-size: 64px;
+  text-align: right;
+  padding: 0px;
+  outline: none;
+  border: none;
+  color: #444444;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.score {
+  position: absolute;
+  top: 65px;
+  right: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #2ECC71;
+  color: #ffffff;
+  font-size: 28px;
+  z-index: 1000;
+}
+.instructions {
+  color: #2E86C1;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "mathcards",
+  "version": "1.0.0",
+  "description": "Game to practice basic arithmetic skills, tailored for elementary school level.",
+  "main": "./bin/www",
+  "scripts": {
+    "start" : "node ./bin/www 4000",
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaslam/mathcards.git"
+  },
+  "keywords": [
+    "math",
+    "game",
+    "arithmetic"
+  ],
+  "author": "Tom Haslam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaslam/mathcards/issues"
+  },
+  "homepage": "https://github.com/thaslam/mathcards#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "forever": "^0.15.3"
+  }
+}
