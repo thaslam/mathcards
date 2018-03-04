@@ -17,7 +17,7 @@ MultiplicationPage.prototype.constructor = MultiplicationPage;
 // override for multiply specific logic
 MultiplicationPage.prototype.generateOperands = function() {
   if (!this.mathEngine) return {};
-  var op1 = this.mathEngine.generateOperand(20);
+  var op1 = this.mathEngine.generateOperand(12);
   var op2 = this.mathEngine.generateOperand(op1);
   return {op1: op1, op2: op2};
 }

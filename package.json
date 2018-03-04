@@ -5,7 +5,8 @@
   "main": "./bin/www",
   "scripts": {
     "start" : "node ./bin/www 4000",
-    "test": "echo \"no tests\""
+    "test": "echo \"no tests\"",
+    "zip": "zip -r ../stage/mathcards.zip ./ -x *.DS_Store .* .*/\\* *.log* node_modules/\\*"
   },
   "repository": {
     "type": "git",

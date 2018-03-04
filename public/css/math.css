@@ -28,13 +28,14 @@
   border-radius: 0px;
   background-color: #AED6F1;
   width: 250px;
-  top: 190px;
+  top: 0px;
 }
 .result img {
   height: 36px;
   width: 36px;
   vertical-align: middle;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 .again {
   margin-left: 20px;

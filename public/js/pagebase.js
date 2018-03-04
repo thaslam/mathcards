@@ -34,9 +34,6 @@ PageBase.prototype.load = function() {
     if (e.keyCode == 13) {
       this.checkAnswer();
     }
-    if ((e.keyCode >= 96 && e.keyCode <= 105) || (e.keyCode >= 48 && e.keyCode <= 57)) {
-      this._setAnswerPosition("input_answer", 0);
-    }
   }.bind(this);
   this.generateProblem();
   this.interval = setInterval(this._tick.bind(this), 1000);

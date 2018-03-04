@@ -17,7 +17,7 @@ SubtractionPage.prototype.constructor = SubtractionPage;
 // override for substraction specific logic
 SubtractionPage.prototype.generateOperands = function() {
   if (!this.mathEngine) return {};
-  var op1 = this.mathEngine.generateOperand(100);
+  var op1 = this.mathEngine.generateOperand(50);
   var op2 = this.mathEngine.generateOperand(op1);
   return {op1: op1, op2: op2};
 }

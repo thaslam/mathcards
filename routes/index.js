@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var userModel = require('../models/UserModel');
+var userModel = require('../models/usermodel');
 
 router.get('/', function (req, res) {
   var scripts = [{ script: '/js/start.js' }];

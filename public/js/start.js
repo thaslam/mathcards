@@ -103,7 +103,7 @@ function StartPage() {
   this._setGoLink = function() {
     var link = document.getElementById("link_go");
     if (this.selectedType && this.selectedUser) {
-      link.href = "http://localhost:4000/" + this.selectedType.dataset.type + "/" + this.selectedUser.dataset.id;
+      link.href = "./" + this.selectedType.dataset.type + "/" + this.selectedUser.dataset.id;
       link.classList.remove("hide");
       return;
     }
